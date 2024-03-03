@@ -1,9 +1,9 @@
 # :memo: Javascript Notes
 
-###  <ins>Arrary Methods</ins>
+###  <ins>Array Methods</ins>
 
 #### .indexOf()
-Finding the *index* of a specific element inside of the arrary 
+Finding the *index* of a specific element inside of the array 
 
 ```
 const animeList = [
@@ -18,7 +18,7 @@ console.log(animeList.indexOf("Sailor Moon"));
 
 // Output:2
 ```
-If the ```animeList``` doesn't have the value we are looking for then a -1 will be returned instead.
+If the `animeList` doesn't have the value we are looking for then a -1 will be returned instead.
 
 Additionally, if the array has multiple elements with the same value example Sailor Moon twice then the first occurrence will be returned first:
 
@@ -39,7 +39,7 @@ console.log(animeList.indexOf("Sailor Moon"));
 
 #### .includes()
 
-Using this method we will be able to find a specific element inside of an array. If the element is in the ```animeList``` it will return a boolean true and if not - false. 
+Using this method we will be able to find a specific element inside of an array. If the element is in the `animeList` it will return a boolean true and if not - false. 
 
 
 ```
@@ -60,8 +60,8 @@ console.log(animeList.includes("Maid Sama"));
 
 An example of using both of these methods together with an if statement. 
 
-If our ```animeCharacters``` arrary includes an element with the value "Usagi", do this: 
-- Save the index to the "Usagi" element in a new variable called usagiIndex.
+If our `animeCharacters` array includes an element with the value "Usagi", do this: 
+- Save the index to the "Usagi" element in a new variable called `usagiIndex`.
 - Then use console.log() to display "Found Usagi at index {indexNumber}!"
 
 ```
