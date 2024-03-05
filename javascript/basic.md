@@ -26,9 +26,9 @@ age = age + 1;
 const PI = 3.14;
 ```
 
-**Real-world Example:** You're birthdate does not change.
+**Real-world Example:** You're birthDate does not change.
 ```
-const birthdate = '1990-01-01';
+const birthDate = '1990-01-01';
 ```
 
 ## Key Differences & Best Practices 
