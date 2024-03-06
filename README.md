@@ -5,7 +5,7 @@ Welcome to my coding journey notes repository! 🚀 Here, I organize my coding n
 
 ## :open_book: Topics
 
-1. [Topic 1: HTML Basics](./html/README.md)
+1. [Topic 1: HTML Basics](./html/htmlBasics.md)
    <!-- - Overview of HTML fundamentals.
    - Code snippets for common HTML elements.
    - Useful resources for further learning. -->
@@ -15,7 +15,7 @@ Welcome to my coding journey notes repository! 🚀 Here, I organize my coding n
    - Examples of CSS properties and their applications.
    - Recommended resources for mastering CSS. -->
 
-3. [Topic 3: JavaScript Essentials](./javascript/README.md)
+3. [Topic 3: JavaScript Essentials](./javascript/jsBasics.md)
    <!-- - Core concepts of JavaScript programming.
    - Code snippets illustrating JavaScript fundamentals.
    - Handy tips for effective JavaScript coding. -->
