@@ -192,3 +192,15 @@ processObject({ name: 'Meg', age: 28 });
 
 ```
 - `{ name, age, country = 'Unknown' }` extracts the `name` and `age` properties from the object. It also provides a default value for the `country` property if it is not present.
+
+
+### Arrow Functions
+
+```
+const color = (a, b) => {
+    return (`${a} and ${b}`)
+}
+
+console.log('output of color is', color('blue', 'green'));
+```
+
