@@ -15,6 +15,8 @@ for (let i = 0; i < 5; i++){
 ```
 let age = 25;
 age = age + 1; 
+
+console.log(age); // output: 26
 ```
 
 ### const - immutable value (unchangeable)
@@ -53,6 +55,9 @@ const person {
 
 // However, the content of the object can be modified
 person.age = 29;
+
+// another way to modify
+person['age'] = 29;
 
 console.log(person); // Output: { name: 'Meghan', age: 29 }
 ```
