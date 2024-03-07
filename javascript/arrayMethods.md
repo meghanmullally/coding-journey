@@ -1,6 +1,27 @@
 # :memo: Javascript Notes
 
-###  <ins>Array Methods</ins>
+###  Array Methods
+
+#### .push()
+
+
+#### .pop()
+
+
+#### .unshift()
+
+
+#### .shift()
+
+
+#### .split() 
+
+
+#### .join()
+
+
+#### .reverse()
+
 
 #### .indexOf()
 Finding the *index* of a specific element inside of the array 
