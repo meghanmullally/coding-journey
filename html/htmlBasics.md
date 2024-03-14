@@ -98,3 +98,18 @@ document.querySelector("div.container > p");
 document.querySelector("ul.navbar > li.active > a");
 ```
 
+#### innerHTML()
+
+The `innerHTML` property allows you to get or set the HTML content (including nested HTML elements) of an element.
+
+**For example:**
+
+Get the inner HTML content of an element
+```
+const content = document.getElementById("myElement").innerHTML;
+```
+
+Set the inner HTML content of an element. Important to note when setting `innerHTML`, it replaces the existing content of the element with the new HTML content provided. Be careful when using `innerHTML` because it can cause a potential security vulnerabilities. 
+```
+document.getElementById("myElement").innerHTML = "<p>New HTML content</p>";
+```
