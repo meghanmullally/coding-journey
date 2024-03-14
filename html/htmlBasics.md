@@ -67,3 +67,34 @@ Output: <p>This is a line<br>break.</p>
 ```
 Output: <hr>
 
+### Document Object 
+
+#### querySelector()
+
+This method enables you to grab anything in HTML, such as an element name, class name, or id.
+
+**For example:**
+
+1. Selecting an element by its tag name:
+```
+document.querySelector("div");
+```
+
+2. Selecting an element by its class name:
+```
+document.querySelector(".container");
+```
+
+3. Selecting an element by its id:
+```
+document.querySelector("#header");
+```
+4. Selecting nested elements using CSS selectors:
+```
+document.querySelector("div.container > p");
+```
+5. Combining multiple selectors to target specific elements:
+```
+document.querySelector("ul.navbar > li.active > a");
+```
+
