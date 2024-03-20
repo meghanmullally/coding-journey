@@ -1,4 +1,157 @@
-# let vs const
+# Javascript
+
+## What is Javascript?
+
+JavaScript, often shortened to JS, is a versatile programming language widely used for creating interactive web pages. It conforms to the ECMAScript standard and is known for its dynamic nature and prototype-based object orientation. JS is lightweight and supports multiple programming styles, including object-oriented and functional programming. 
+
+It can be used both in front end (web browsers) and back end (server environments). With JavaScript, developers can enhance user experience on websites by adding interactivity and dynamic content, as well as interact with databases to retrieve and manipulate information.
+
+## Data Types 
+
+:rotating_light: To find which type you are using in Javascript use `typeof()`.
+
+Examples
+```
+typeof(123);
+// Output: number
+
+typeof('hello world!');
+// Output: string
+```
+
+### Primitive data types
+
+#### Number
+
+##### Arithmetic Operators
+
+These operators would be addition, subtraction, modulus (or remainder) arithmetic and so forth.
+
+```
+1 + 2
+=> 3
+
+2 - 5
+=> -3
+
+5 / 2
+=> 2.5
+
+6 * 2
+=> 12
+```
+
+This example is called an expression.
+
+```
+200 + 4000 + -20000 
+// Output: -15800
+```
+
+##### Special Number Operators
+
+Exponents example: 
+
+```
+3**2
+// Output: 9
+```
+Another way to implement exponents would be using the `Math` object.
+
+Take a number to some power use `Math.pow` 
+```
+// 3^2 becomes
+Math.pow(3,2)
+=> 9
+// 2^4 becomes
+Math.pow(2,4)
+=> 16
+```
+
+Square root - `Math.sqrt`
+
+```
+// √4 becomes
+Math.sqrt(4)
+=> 2
+```
+
+Create a random number - `Math.random`
+
+```
+// The following only returns a random decimal
+Math.random()
+=> .229375290430
+/**
+  The following will return a
+  random number between 0 and 10
+*/
+Math.random()*10
+```
+
+Since `Numbers` in JS can be either Floats or Integers (but they are still only called Numbers)...if you want to get rid of remaining decimals places - we can use `Math.floor`, `Math.ceil` or `Math.round`
+
+```
+// round down to the nearest integer
+Math.floor(3.14)
+=> 3
+Math.floor(3.9999)
+=> 3
+
+// round up to the nearest integer
+Math.ceil(3.14)
+=> 4
+Math.ceil(3.9999)
+=> 4
+
+// Mathematically round to the nearest integer
+Math.round(3.14)
+=> 3
+Math.round(3.9999)
+=> 4
+```
+
+#### String
+
+double quotes
+```
+"hello world";
+```
+single quotes
+```
+'hello world';
+```
+back tick
+```
+`hello world`;
+```
+
+#### Boolean
+```
+true 
+false
+```
+#### Null
+```
+const favFood = null;
+```
+#### Undefined
+```
+placeholder for undefined example
+```
+#### Symbol
+
+Rare data type, often used as parts of an object
+
+```
+placeholder for Symbol example
+```
+
+### Reference Types
+#### Object
+most important data type - they are the way js runs. Object oriented program (Js is an OOP language). underneath the hood, everything that js shows us, everything in js is an object.
+
+## let vs const
 
 ### let - mutable value (changeable)
 
