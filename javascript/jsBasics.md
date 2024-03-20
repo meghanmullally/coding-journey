@@ -113,18 +113,106 @@ Math.round(3.9999)
 
 #### String
 
-double quotes
+Strings are collection of characters such as letters and symbols. We use these to deal with words and text in Javascript. 
+
+There are **three** ways to ways to write a string.
+
+###### Backticks
+ Double quotes
 ```
 "hello world";
 ```
-single quotes
+###### Backticks
+ Single quotes
 ```
 'hello world';
 ```
-back tick
+###### Backticks
+These allow you to inject javascript into a string using **string interpolation** 
 ```
 `hello world`;
 ```
+##### String helper methods
+
+Use the `length` property if you want to find the length of a string
+
+```
+"elephant".length
+=> 8
+```
+
+Strings have a variety of [methods](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String#Methods) that allow a dev to manipulate the string and access info.
+
+A few examples
+
+###### charAt()
+```
+'hello'.charAt(2);
+=> "l"
+```
+
+###### replace()
+
+```
+'hello, world'.replace('hello', 'goodbye');
+=> "goodbye, world"
+```
+
+###### toUpperCase()
+
+```
+'hello'.toUpperCase();
+=> "HELLO"
+```
+
+##### String Concatenation
+Creating expressions with strings using the addition operator
+```
+'Welcome' + 'Spring!';
+=> 'Welcome Spring!'
+```
+the 'plus' binary operator is said to be **"overloaded"**— meaning that it behaves differently depending on what's on either side of it. Consider the following expressions. What do they output, and why?
+
+```
+ 1 + 2 + '3'
+ => '33'
+
+ vs
+
+'1' + 2 + 3
+=> '123'
+```
+
+##### Converting Strings to Integers
+
+###### parseInt()
+
+Convert a string to an integer using `parseInt()` function
+
+```
+parseInt('123');
+=> 123
+
+parseInt('010')
+=> 10
+```
+
+###### parseFloat()
+
+Parse a floating point number by using `parseFloat()` function
+
+```
+parseFloat('11.2');
+=> 11.2
+```
+
+Another way to convert values to numbers would be using the unary `+` operator
+
+```
++'42';
+=> 42
+```
+
 
 #### Boolean
 ```
