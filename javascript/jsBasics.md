@@ -23,22 +23,36 @@ typeof('hello world!');
 
 #### Number
 
+In other programming languages like Python, numbers are divided into two class or objects: Integers or Floats (decimal numbers). 
+
+In Javascript all numbers are **"double-precision 64-bit format IEEE 754 values"** ... basically there are no such thing has integers in js.
+
+![Giphy Math Thinking](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExaG41bXA4bmwwZWh2aG5icXZvOTFxNzZhanU0Zmt3aHF2aDRibGE2eSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/APqEbxBsVlkWSuFpth/giphy-downsized-large.gif)
+
+
 ##### Arithmetic Operators
 
-These operators would be addition, subtraction, modulus (or remainder) arithmetic and so forth.
-
+These operators would be addition, subtraction, modulus (or remainder) arithmetic and so forth. Numeric operators are `+`, `-`, `*`, `/` and `%`.
 ```
+// Addition - Adds two numbers together.
 1 + 2
 => 3
 
+// Subtraction - Subtracts the second number from the first.
 2 - 5
 => -3
 
+// Division - Divides the first number by the second.
 5 / 2
 => 2.5
 
+// Multiplication - Multiplies two numbers.
 6 * 2
 => 12
+
+// Modulus - Returns the remainder of a division operation.
+15%4 
+=> 3
 ```
 
 This example is called an expression.
@@ -111,6 +125,7 @@ Math.round(3.9999)
 => 4
 ```
 
+----------------------
 #### String
 
 Strings are collection of characters such as letters and symbols. We use these to deal with words and text in Javascript. 
@@ -213,6 +228,29 @@ Another way to convert values to numbers would be using the unary `+` operator
 => 42
 ```
 
+##### NaN 
+
+Not a Number (NaN) is a special value in JS that indicates an invalid or unrepresentable numeric value. This often happens when there are failed numeric operations or parsing operations.
+
+**Parsing Strings:** `parseInt()` or `parseFloat()` are used to convert a string to a number. If the string contains any non-numeric characters the result will return NaN.
+
+```
+parseInt('hello', 10);
+=> NaN
+```
+
+**Mathematical Operations:** When NaN is involved in a mathematical operation, the result will always return NaN.
+
+```
+NaN + 9;
+=> NaN
+```
+**Testing NaN:** You can use the built-in `isNaN()` function to test whether a value is NaN. It returns `true` if the argument is NaN, and `false` otherwise.
+
+```
+isNaN(NaN);
+=> True
+```
 
 #### Boolean
 ```
@@ -238,6 +276,64 @@ placeholder for Symbol example
 ### Reference Types
 #### Object
 most important data type - they are the way js runs. Object oriented program (Js is an OOP language). underneath the hood, everything that js shows us, everything in js is an object.
+
+----------------------
+
+# Variables and Keywords
+
+In JS, variables are used to store data types into the memory of the computer so they can be later referenced. In Javascript the variables we use are `let` and `const` and need to use `lowerCamelCase`.
+
+💡 If you declare a variable without assigning any value, its type is `undefined`.
+
+```
+let x;
+=> undefined
+```
+
+Now lets see an example where we are assigning a value to variable.
+```
+const name = 'Meghan';
+=> undefined
+
+name
+=> Meghan
+```
+
+### Assignment Operators
+
+When assigning values we use `=`, and  compound assignment statements:  `+=` and `-=` 
+
+```
+let a = 2;
+=> 2
+
+a += 10;
+=> 11
+
+a -= 5;
+=> 4
+```
+
+If you want to increment and decrement you can use `++` and `--` which can also be used as prefix or postfix operators.
+
+###### toString()
+
+Turn a number into a string
+
+```
+(1).toString()
+=> "1"
+/**
+  be careful though,
+  since numbers can be floats
+  javascript might
+  misunderstand you.
+*/
+1.toString()
+=> Float Error
+// but the following works
+1..toString()
+```
 
 ## let vs const
 
@@ -272,6 +368,24 @@ const PI = 3.14;
 **Real-world Example:** You're birthDate does not change.
 ```
 const birthDate = '1990-01-01';
+```
+
+#### String Interpolation 
+
+By using a string with backticks you will be able to "inject" JS into the string. See below. 
+
+```
+const firstName = 'Meghan';
+const favAnimal = 'elephant';
+const favNumber = 11;
+
+`My name is ${firstName}` and my fav animal is a ${favAnimal} and my fav number is ${favNumber}`;
+```
+
+The alternative to the above example would of been 
+
+```
+"My name is " + firstName + " and my fav animal is a " + favAnimal + " and my fav number is " + favNumber;
 ```
 
 ## Key Differences & Best Practices 
