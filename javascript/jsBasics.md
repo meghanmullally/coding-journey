@@ -253,10 +253,37 @@ isNaN(NaN);
 ```
 
 #### Boolean
+
+Boolean values in JavaScript represent two states: true and false. They are fundamental for controlling the flow of a program based on conditions.
+
+##### Truthy & Falsy
+
+In JavaScript, not all values are inherently Boolean. Some values, when evaluated in a Boolean context, are considered "truthy," while others are considered "falsy."
+
+**Truthy Values:** Any value that is not inherently falsy is considered truthy. This includes non-empty strings, non-zero numbers, objects (including arrays and functions), and the Boolean value `true`.
+
+**Falsy Values:** Conversely, certain values are considered falsy, meaning they evaluate to `false` in a Boolean context. These include `false` itself, the number 0, an empty string '', `NaN` (Not a Number), `null`, and `undefined`.
+
+Lets see some examples of verifying whether it will be truthy or falsey. 
+
 ```
-true 
-false
+// Truthy values
+!!1   => true
+!!-1  => true
+!!'hello'  => true
+!![]  => true (an empty array)
+!!{}  => true (an empty object)
+
+// Falsy values
+!!0       => false
+!!NaN     => false
+!!null    => false
+!!undefined  => false
+!!''      => false (an empty string)
 ```
+
+**Double Negation (!!):** By using `!!`, you can coerce any value into its corresponding Boolean representation. This technique is commonly used in JavaScript to explicitly convert values to their Boolean equivalents.
+
 #### Null
 ```
 const favFood = null;
